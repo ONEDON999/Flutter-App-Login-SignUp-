@@ -1,3 +1,4 @@
+import 'package:first/main.dart';
 import 'package:flutter/material.dart';
 //import 'package:mozapp/signUp_screen.dart';
 
@@ -66,7 +67,12 @@ class LoginScreen extends StatelessWidget {
                       colors: [Color.fromRGBO(33, 150, 243, 1), Color.fromARGB(220, 33, 149, 243)]),
                 ),
                 child: MaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                     Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const SignInUI()),
+            );
+                  },
                   child: const Text(
                     "LOG IN",
                     style: TextStyle(

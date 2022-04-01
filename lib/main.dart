@@ -28,3 +28,27 @@ class LoginUI extends StatelessWidget {
     );
   }
 }
+class SignInUI extends StatelessWidget {
+  const SignInUI({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "Flutter App",
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: const Text(
+            "One Don Flutter App",
+          ),
+        ),
+        body: const SignUpScreen(),
+        // body: const SignUpScreen(),
+      ),
+    );
+  }
+}
